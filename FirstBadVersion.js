@@ -21,6 +21,7 @@ var solution = function (isBadVersion) {
   };
 };
 
+//O(log(n)) recursive but in some cases it breaks
 var solution = function (isBadVersion) {
   /**
    * @param {integer} n Total versions
