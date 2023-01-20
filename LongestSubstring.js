@@ -5,7 +5,6 @@ var lengthOfLongestSubstring = function (s) {
   let longest = 0;
   for (let i = 0; i < s.length; i++) {
     let value = s[i];
-    console.log(value);
     if (letters[value]) {
       console.log(value);
       start = Math.max(start, letters[value]);
