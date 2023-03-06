@@ -10,16 +10,3 @@ var deleteDuplicates = function (head) {
   }
   return head;
 };
-
-var deleteDuplicates = function (head) {
-  function RecursiveWay(node) {
-    if (!node) return node;
-    var nextNode = node.next;
-    if (node.next !== null && node.val === nextNode.val) {
-      return RecursiveWay(nextNode.next);
-    } else {
-      return RecursiveWay(node.next);
-    }
-  }
-  return RecursiveWay(head);
-};
